@@ -28,7 +28,40 @@ p {
   line-height: 30px;
 }
 img {
-  border-radius: 4px;
+  border-radius: 15px;
+  opacity: 0.9;
+  transition: 200ms ease-in-out;
+}
+img:hover {
+  opacity: 1;
+}
+nav {
+  padding: 20px 0 10px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: 200ms ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+
+nav li.active a,
+nav a:hover {
+  color: var(--accent-color);
+  opacity: 0.8;
 }
 
 .hero {
@@ -100,7 +133,6 @@ img {
 
 .content img:hover {
   opacity: 1;
-  border-radius: 50%;
 }
 
 .btn-branding-outline {
@@ -114,6 +146,12 @@ img {
 
 .project-description {
   padding: 120px 60px;
+}
+
+.logo {
+  max-width: 50px;
+  position: relative;
+  top: -5px;
 }
 
 @media (max-width: 960px) {
@@ -138,5 +176,26 @@ img {
   .content-container {
     text-align: center;
     padding: 0;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 300px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h2.mb-4 {
+    font-size: 18px;
+  }
+  nav a {
+    font-size: 11px;
+  }
+  .logo {
+    max-height: 40px;
   }
 }
