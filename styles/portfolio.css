@@ -149,7 +149,7 @@ footer .social-links a:hover {
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 60px 20px;
 }
 
 .content {
@@ -216,10 +216,24 @@ footer .social-links a:hover {
   position: relative;
   top: -5px;
 }
+#work-inquiry {
+  text-align: left;
+}
+
+#work-together {
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+  left: 6px;
+}
 
 #contact-button {
-  border: 2px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
   font-weight: 500;
+}
+
+#footnote {
+  font-size: 12px;
 }
 
 @media (max-width: 960px) {
@@ -227,7 +241,8 @@ footer .social-links a:hover {
     padding: 0;
     text-align: center;
   }
-  h1 {
+  h1,
+  .content h1 {
     font-size: 52px;
     line-height: 1.5;
   }
@@ -270,9 +285,13 @@ footer .social-links a:hover {
   h4 {
     font-size: 24px;
   }
+  footer {
+    margin: 15px 5px 0;
+  }
 }
 @media (max-width: 300px) {
-  h1 {
+  h1,
+  .content h1 {
     font-size: 36px;
   }
   h2 {
@@ -295,5 +314,8 @@ footer .social-links a:hover {
   }
   footer .email-link {
     font-size: 16px;
+  }
+  footer {
+    display: none;
   }
 }
