@@ -1,11 +1,14 @@
 :root {
-  --main-color: #f5e4de;
+  --main-color: #fdf4f2;
   --accent-color: #246d73;
   --text-color: #3c2d2a;
   --main-color-lightened: white;
 }
-body {
-  background-color: var(--main-color-lightened);
+.container-fluid {
+  background-color: var(--main-color);
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 
 h1 {
@@ -62,6 +65,7 @@ nav a {
   font-family: "Poppins", sans-serif;
 }
 
+a,
 nav li.active a,
 nav a:hover {
   color: var(--accent-color);
